@@ -7,7 +7,6 @@
 [![Code size](https://img.shields.io/github/languages/code-size/hz157/LSS?color=blueviolet)](https://github.com/hz157/LSS)
 [![Repo size](https://img.shields.io/github/repo-size/hz157/LSS?color=eb56fd)](https://github.com/hz157/LSS/main)
 [![Last commit](https://img.shields.io/github/last-commit/hz157/LSS/main)](https://github.com/hz157/LSS/commits/main)
-[![License](https://img.shields.io/badge/license-GPL_V3.0-yellowgreen.svg)](https://github.com/lsky-org/lsky-pro/blob/master/LICENSE)
 
 ## Use tools
 - Wechat Dev Tool
