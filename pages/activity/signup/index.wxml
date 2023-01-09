@@ -1,0 +1,9 @@
+<!--pages/activity/signup/index.wxml-->
+<i-panel title="活动签到">
+  <view style="padding: 15px;">
+    <i-cell-group>
+      <i-cell title="签到管理" is-link url="/pages/activity/signup/usersignupManage/index"></i-cell>
+      <i-cell title="成员签到" is-link url="/pages/activity/signup/signCode/index"></i-cell>
+    </i-cell-group>
+  </view>
+</i-panel>

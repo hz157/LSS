@@ -1,0 +1,16 @@
+<!--pages/activity/detailactivity/index.wxml-->
+
+<i-panel title="发布活动">
+    <view style="padding: 15px;">
+      <i-input value="{{ record.name }}" id="activity.name" title="活动名称"  disabled="true" />
+      <i-input value="{{ record.address }}" id="activity.address" title="活动地址"  />
+      <i-input value="{{ record.peopleLimit }}" id="activity.peopleLimit" type="number" title="活动限制人数"  disabled="true"/>
+      <i-input value="{{ record.registrationDate }}" title="报名开始时间"  disabled="true" />
+      <i-input value="{{ record.deadline }}" title="报名结束时间"  disabled="true" />
+      <i-input value="{{ record.startDate }}" title="活动开始时间"  disabled="true"/>
+      
+    </view>
+    <view style="padding: 15px;">
+      <button class="confirm-btn" bindtap="join">参加</button>
+    </view>
+</i-panel>

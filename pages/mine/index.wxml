@@ -1,0 +1,29 @@
+<!--pages/my/index.wxml-->
+<i-row>
+  <i-panel title="个人信息">
+    <view style="padding: 15px;">
+      <i-card title="{{ username }}" thumb=" {{ avatar }}" bindtap="AvatarEdit">
+      <view slot="content">UID: {{ uid }}</view>
+      <view slot="footer">积分：{{ integral }}</view>
+    </i-card> 
+    </view>
+  </i-panel>
+</i-row>
+<i-row>
+  <i-divider  color="#B01C34" lineColor="#B01C34">设置中心</i-divider>
+  <i-cell-group>
+    <i-cell title="个人信息" is-link url="/pages/mine/information/index"></i-cell>
+    <i-cell title="修改密码" is-link url="/pages/mine/editpwd/index"></i-cell>
+    <i-cell title="浏览历史" is-link url="/pages/book/historybook/index"></i-cell>
+    <i-cell title="系统信息" is-link url="/pages/about/index"></i-cell>
+    <i-cell title="注销登录" is-link url="/pages/account/login/index" bind:click="loginout"></i-cell>
+</i-cell-group>
+</i-row>
+
+<i-load-more tip="LSS" loading="{{ false }}" />
+
+<i-tab-bar current="{{ current }}" color="#B01C34" bindchange="handleChange" fixed="true">
+    <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="activity" icon="flag" current-icon="flag_fill" title="活动"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>

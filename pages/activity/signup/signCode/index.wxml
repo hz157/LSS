@@ -1,0 +1,9 @@
+<!--pages/activity/signup/signCode/index.wxml-->
+<i-panel title="发布活动">
+    <view style="padding: 15px;">
+      <i-input value="{{ code }}" id="code" bind:change="inputMsg" type="number" title="签到码" placeholder="请输入签到码"/>
+    </view>
+    <view style="padding: 15px;">
+      <button class="confirm-btn" bindtap="signup">签到</button>
+    </view>
+</i-panel>

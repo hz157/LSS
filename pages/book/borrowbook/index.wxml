@@ -1,0 +1,21 @@
+<!--pages/book/borrowbook/index.wxml-->
+<i-panel title="借阅书籍">
+    <view style="padding: 15px;">
+      <i-input value="{{ book.isbn }}" disabled="true" id="isbn" title="ISBN" />
+      <i-input value="{{ book.name }}" title="书名" disabled="true" />
+      <i-input value="{{ book.subname }}" title="副标题" disabled="true" />
+      <i-input value="{{ book.description }}" title="概述" disabled="true" />
+      <i-input value="{{ book.author }}" title="作者" disabled="true" />
+      <i-input value="{{ book.authorIntro }}" title="作者介绍" disabled="true" />
+      <i-input value="{{ book.translator }}" title="译者" disabled="true" />
+      <i-input value="{{ book.publishing }}" title="出版社" disabled="true" />
+      <i-input value="{{ book.published }}" title="出版年月" disabled="true" />
+      <i-input value="{{ book.pages }}" title="页数" disabled="true" />
+      <i-input value="{{ book.doubanScore }}" title="豆瓣评分" disabled="true" />
+      <i-input title="封面图" disabled="true" />
+      <image src="{{ book.photoUrl }}"></image>
+    </view>
+    <view style="padding: 15px;">
+      <button class="confirm-btn" bindtap="borrow">借阅</button>
+    </view>
+</i-panel>

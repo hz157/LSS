@@ -1,0 +1,39 @@
+<!--pages/activity/index.wxml-->
+
+<!-- 头部滚动图 -->
+<i-panel title="活动管理">
+  <view style="padding: 15px;">
+      <swiper class="banner" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay interval="3000" circular>
+        <swiper-item>
+          <image src= "{{ scrollPoster1 }}" id="791" bindtap="swiperTap" mode="widthFix"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src= "{{ scrollPoster2 }}" mode="widthFix" id="792" bindtap="swiperTap"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src= "{{ scrollPoster3 }}" id="793" mode="widthFix" bindtap="swiperTap"></image>
+      </swiper-item>
+      </swiper>
+    </view>
+
+
+  <view style="padding: 15px;">
+    <i-cell-group>
+      <i-cell title="发布活动" is-link url="/pages/activity/releaseactivity/index"></i-cell>
+      <i-cell title="参加活动" is-link url="/pages/activity/liveactivity/index"></i-cell>
+      <i-cell title="活动签到" is-link url="/pages/activity/signup/index"></i-cell>
+      <i-cell title="查看历史活动" is-link url="/pages/activity/history/index"></i-cell>
+      <i-cell title="我发布的活动" is-link url="/pages/activity/myactivity/index"></i-cell>
+      <i-cell title="我参加的活动" is-link url="/pages/activity/myregisteractivity/index"></i-cell>
+    </i-cell-group>
+  </view>
+</i-panel>
+
+
+<!-- 底部导航栏 -->
+<i-tab-bar current="{{ current }}" color="#B01C34" bindchange="handleChange" fixed="true">
+    <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="activity" icon="flag" current-icon="flag_fill" title="活动"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>
+<!-- <view class="is-ios"></view> -->

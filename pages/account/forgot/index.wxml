@@ -1,0 +1,10 @@
+<!--pages/account/forgot/index.wxml-->
+<i-panel title="修改密码">
+    <view style="padding: 15px;">
+        <i-input bind:change="inputMsg" id="tel" type="number" title="账号" placeholder="请输入手机号" />
+        <i-input bind:blur="verifypwd" bind:change="inputMsg" id="pwd" type="password" title="新密码" placeholder="请输入新密码" />
+        <i-input bind:blur="verifypwd" bind:change="inputMsg" id="vpwd" type="password" title="确认密码"  placeholder="请再次输入新密码" />
+        <i-input bind:blur="verifyidcard" bind:change="inputMsg" id="idcard" type="number" title="身份证"  placeholder="请输入该账号所绑定的身份证号" />
+    </view>
+    <button class="confirm-btn" bindtap="toForgot">修改</button>
+</i-panel>

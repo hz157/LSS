@@ -1,0 +1,12 @@
+<!--pages/book/historybook/index.wxml-->
+<i-panel title="浏览历史">
+    <view style="padding: 15px;">
+      <view wx:for="{{ books }}" wx:for-item="item">
+        <i-divider color="#B01C34" lineColor="#B01C34"></i-divider>
+        <i-card title="{{ item.name }}" thumb="{{ item.photoUrl }}" data-bar_code="{{ item.isbn }}" bindtap="borrow">
+          <view slot="content">{{ item.author }}</view>
+          <view slot="footer">浏览时间：{{ records[index].datetime }}</view>
+        </i-card>
+      </view>
+    </view>
+</i-panel>

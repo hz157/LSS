@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "i-panel": "../../../../dist/panel/index",
+    "i-card": "../../../../dist/card/index",
+    "i-divider": "../../../../dist/divider/index",
+    "i-cell-group": "../../../../dist/cell-group/index",
+    "i-cell": "../../../../dist/cell/index",
+    "i-icon": "../../../../dist/icon/index",
+    "i-page": "../../../../dist/page/index",
+    "i-load-more": "../../../../dist/load-more/index",
+    "i-input": "../../../../dist/input/index",
+    "i-button": "../../../../dist/button/index"
+  }
+}

@@ -1,0 +1,8 @@
+<!--pages/book/managebook/index.wxml-->
+<i-panel title="借阅管理">
+    <view style="padding: 15px;">
+      <i-cell title="借阅记录" is-link url="/pages/book/borrowrecord/index"></i-cell>
+      <i-cell title="归还书籍" is-link url="/pages/book/returnbook/index"></i-cell>
+      <i-cell title="我的书籍" is-link url="/pages/book/mybook/index"></i-cell>
+    </view>
+</i-panel>

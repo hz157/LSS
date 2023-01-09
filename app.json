@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/account/login/index",
+    "pages/index/index",
+    "pages/account/register/index",
+    "pages/account/forgot/index",
+    "pages/logs/logs",
+    "pages/mine/index",
+    "pages/mine/information/index",
+    "pages/mine/editpwd/index",
+    "pages/about/index",
+    "pages/book/bookview/index",
+    "pages/book/releasebook/index",
+    "pages/book/managebook/index",
+    "pages/book/borrowbook/index",
+    "pages/book/borrowrecord/index",
+    "pages/book/returnbook/index",
+    "pages/activity/index",
+    "pages/activity/history/index",
+    "pages/activity/liveactivity/index",
+    "pages/activity/releaseactivity/index",
+    "pages/activity/myregisteractivity/index",
+    "pages/activity/myactivity/index",
+    "pages/activity/signup/index",
+    "pages/activity/signup/usersignupManage/index",
+    "pages/activity/signup/signCode/index",
+    "pages/book/mybook/index",
+    "pages/book/historybook/index",
+    "pages/activity/detailactivity/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "LSS图书共享程序",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

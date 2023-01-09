@@ -1,0 +1,61 @@
+
+<!-- 头部滚动通告 -->
+<i-row>
+  <i-notice-bar icon="systemprompt" loop>
+    {{ announcement }}
+  </i-notice-bar>
+</i-row>
+<!-- 头部滚动图 -->
+<i-panel title="热门活动">
+    <view style="padding: 15px;">
+      <swiper class="banner" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay interval="3000" circular>
+        <swiper-item>
+          <image src= "{{ scrollPoster1 }}"  mode="widthFix"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src= "{{ scrollPoster2 }}" mode="widthFix"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src= "{{ scrollPoster3 }}" mode="widthFix"></image>
+      </swiper-item>
+      </swiper>
+    </view>
+</i-panel>
+
+<!-- 分割线 -->
+<i-row>
+  <i-divider color="#B01C34" lineColor="#B01C34"> 功能中心 </i-divider>
+</i-row>
+<i-row>
+  <i-grid>
+    <i-grid-item bindtap="navigateToBook" data-url="releasebook">
+        <i-grid-icon>
+            <image src="../images/icon/share.png" />
+        </i-grid-icon>
+        <i-grid-label>发布藏书</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap="navigateToBook" data-url="bookview">
+      <i-grid-icon >
+            <image src="../images/icon/book.png" />
+      </i-grid-icon>
+      <i-grid-label>书籍浏览</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap="navigateToBook" data-url="managebook">
+      <i-grid-icon>
+            <image src="../images/icon/borrow.png" />
+      </i-grid-icon>
+      <i-grid-label>借阅管理</i-grid-label>
+    </i-grid-item>
+</i-grid>
+</i-row>
+<i-row>
+  <i-load-more tip="暂无数据" loading="{{ false }}" />
+</i-row>
+
+<!-- 底部导航栏 -->
+<i-tab-bar current="{{ current }}" color="#B01C34" bindchange="handleChange" fixed="true">
+    <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="activity" icon="flag" current-icon="flag_fill" title="活动"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>
+<!-- <view class="is-ios"></view> -->

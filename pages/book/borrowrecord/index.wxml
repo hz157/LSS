@@ -1,0 +1,11 @@
+<!--pages/book/borrowrecord/index.wxml-->
+<i-panel title="借阅记录">
+    <view wx:for="{{ record }}" wx:for-item="item">
+        <i-divider color="#B01C34" lineColor="#B01C34"></i-divider>
+        <i-card title="{{info[index].name}}" extra="BID： {{ item.id }}" bindtap="borrow">
+          <view slot="content">归还时间: {{ item.returnDate }}</view>
+          <view slot="footer">借阅时间：{{ item.borrowingDate }}</view>
+        </i-card>
+      </view>
+      <i-load-more tip="{{ bottonContext }}" loading="{{ bottonStatus }}" />
+</i-panel>

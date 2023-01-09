@@ -1,0 +1,17 @@
+<!--pages/mine/editpwd/index.wxml-->
+<i-panel title="修改密码">
+  <view style="padding: 15px;">
+  <!--定义form组件-->
+    <form bindsubmit="toLogin">
+      <!--输入框区块-->
+      <view id="inputView">
+        <i-input bind:change="inputMsg" id="oldPwd" name="oldPwdText" autofocus="true" type="password" title="原密码" placeholder="请输入原有密码" />
+        <i-input bind:change="inputMsg" id="newPwd" name="newPwdText" type="password" title="新密码" placeholder="请输入新密码" />
+      </view>
+      <!--按钮区域-->
+      <view id="buttonView">
+        <button class="confirm-btn" bindtap="editPwd">修改</button>
+      </view>
+    </form>
+  </view>
+</i-panel>

@@ -1,0 +1,29 @@
+<!--pages/account/login/index.wxml-->
+<!-- <text>LSS图书共享Demo</text> -->
+
+  <view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">LOGIN</view>
+    <view class="welcome">
+      欢迎回来！
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <text class="tit">账号</text>
+        <input type="text" placeholder="请输入手机号" id="id" bindinput="inputMsg" />
+      </view>
+      <view class="input-item">
+        <text class="tit">密码</text>
+        <input type="password" placeholder="请输入密码" id="pwd" bindinput="inputMsg" />
+      </view>
+    </view>
+    <button class="confirm-btn" bindtap="toLogin">登录</button>
+    <view class="forget-section" bindtap="forgot">
+      忘记密码?
+    </view>
+  </view>
+  <view class="register-section">
+    还没有账号?
+    <text bindtap="register">马上注册</text>
+  </view>
+</view>

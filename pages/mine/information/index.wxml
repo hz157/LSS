@@ -1,0 +1,14 @@
+<!--pages/mine/information/index.wxml-->
+<i-panel title="个人信息">
+    <view style="padding: 15px;">
+      <i-input value="{{ uid }}" id="uid" disabled="true" title="账户编号" />
+      <i-input value="{{ idcard }}" id="idcard" disabled="true" title="身份证" />
+      <i-input value="{{ actualname }}" disabled="true" id="actualname" title="真实姓名" />
+      <i-input value="{{ sex }}" id="sex" disabled="true" title="性别" />
+      <i-input value="{{ username }}" id="username" title="社区昵称" bind:change="inputMsg" />
+      <i-input value="{{ mail }}" id="mail" title="邮件" bind:change="inputMsg" />
+      <i-input value="{{ address }}" id="address" title="地址" bind:change="inputMsg" />
+      <i-input value="{{ tel }}" id="tel" disabled="true" title="电话" />
+    </view>
+    <button class="confirm-btn" bindtap="editProfile">修改</button>
+</i-panel>

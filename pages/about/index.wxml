@@ -1,0 +1,7 @@
+<!--pages/about/index.wxml-->
+<i-panel title="关于程序">
+    <view style="padding: 15px;">
+      <!-- 项目地址：https://github.com/hz157/LSS -->
+      SpringBoot MybatisPlus Weapp
+    </view>
+</i-panel>

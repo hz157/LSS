@@ -1,0 +1,12 @@
+<!--pages/activity/liveactivity/index.wxml-->
+<i-panel title="参加活动">
+    <i-input value="{{ keyword }}" title="关键字搜索" placeholder="请输入关键字" bind:change="inputText" id="keyword" />
+  <view wx:for="{{ record }}" wx:for-item="item">
+        <i-divider color="#B01C34" lineColor="#B01C34"></i-divider>
+        <i-card title="{{ item.name }}" extra="ID： {{ item.id }}" id="{{ item.id }}" bindtap="tapCard">
+          <view slot="content">已报名人数: {{ info[index] }}</view>
+          <view slot="footer">活动开始时间：{{ item.startDate }}</view>
+        </i-card>
+      </view>
+      <i-load-more tip="{{ bottonContext }}" loading="{{ bottonStatus }}" />
+</i-panel>

@@ -1,0 +1,16 @@
+<!--pages/book/bookview/index.wxml-->
+<i-panel title="书库\t当前共有：{{ totalData }} 本书数据">
+    <view style="padding: 15px;">
+      <i-cell i-icon="scan" title="ISBN号搜索" bindtap="scanCode" is-link>
+        <!-- <i-icon slot="icon" type="scan" size="28" color="#80848f" /> -->
+      </i-cell>
+      <view wx:for="{{ books }}" wx:for-item="item">
+        <i-divider color="#B01C34" lineColor="#B01C34"></i-divider>
+        <i-card title="{{ item.name }}" thumb="{{ item.photoUrl }}" data-bar_code="{{ item.isbn }}" bindtap="borrow">
+          <view slot="content">{{ item.author }}</view>
+          <!-- <view slot="footer">在库：{{ item.stock }}本</view> -->
+        </i-card>
+      </view>
+    </view>
+    <i-load-more tip="{{ bottonContext }}" loading="{{ bottonStatus }}" />
+</i-panel>

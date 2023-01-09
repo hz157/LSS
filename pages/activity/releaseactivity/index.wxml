@@ -1,0 +1,36 @@
+<!--pages/activity/releaseactivity/index.wxml-->
+
+<i-panel title="发布活动">
+    <view style="padding: 15px;">
+      <i-input value="{{ activity.name }}" id="activity.name" bind:change="inputMsg" title="活动名称" placeholder="请输入活动名称"/>
+      <i-input value="{{ activity.address }}" id="activity.address" bind:change="inputMsg" title="活动地址" placeholder="请输入活动地址" />
+      <i-input value="{{ activity.peopleLimit }}" id="activity.peopleLimit" bind:change="inputMsg" type="number" title="活动限制人数" placeholder="请输入活动限制人数"/>
+      
+      <view class="tui-picker-content">
+        <picker mode="multiSelector" id="activity.registrationDate" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+          <view class="tui-picker-detail">
+            <i-input value="{{ activity.registrationDate }}" title="报名开始时间" placeholder="请输入报名开始时间" />
+          </view>
+        </picker>
+      </view>
+      <view class="tui-picker-content">
+        <picker mode="multiSelector" id="activity.deadline" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+          <view class="tui-picker-detail">
+            <i-input value="{{ activity.deadline }}" title="报名结束时间" placeholder="请输入报名结束时间" />
+          </view>
+        </picker>
+      </view>
+      <view class="tui-picker-content">
+        <picker mode="multiSelector" id="activity.startDate" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+          <view class="tui-picker-detail">
+            <i-input value="{{ activity.startDate }}" title="活动开始时间" placeholder="请输入活动开始时间"  />
+          </view>
+        </picker>
+      </view>
+      
+      
+    </view>
+    <view style="padding: 15px;">
+      <button class="confirm-btn" bindtap="release">发布</button>
+    </view>
+</i-panel>
